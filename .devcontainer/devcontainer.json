@@ -25,9 +25,10 @@
 
 	// "forwardPorts": [],
 
-	"onCreateCommand": "conda init; source ~/.bashrc",
-
-	"postCreateCommand": "conda create -y -n DL numpy pandas matplotlib tensorflow scikit-learn theano keras nlp pytorch seaborn nltk cryptography pillow; conda activate DL",
+	"containerUser": "root",
+	
+	"postCreateCommand": "conda init",
+	// "postCreateCommand": "bash .devcontainer/postCreateScript.sh",
 
 
 	// Configure tool-specific properties.
